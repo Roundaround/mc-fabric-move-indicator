@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "moveindicator",
+  "version": "${version}",
+  "name": "Move Indicator",
+  "description": "Simple UI element showing your current movement status.",
+  "authors": [
+    "Roundaround"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/roundaround-move-indicator",
+    "sources": "https://github.com/Roundaround/mc-fabric-move-indicator",
+    "issues": "https://github.com/Roundaround/mc-fabric-move-indicator/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/moveindicator/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.roundaround.moveindicator.client.MoveIndicatorClientMod"
+    ]
+  },
+  "mixins": [
+    "moveindicator.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "1.19.x",
+    "java": ">=17"
+  }
+}
